@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>vctable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class &lt;#VC#&gt;: UIViewController {
+
+    // MARK: - IB Outlets
+    
+    @IBOutlet private weak var tableView: UITableView!
+    
+    // MARK: - IB Actions
+    
+    // MARK: - Attributes
+    
+    // MARK: - Init
+    
+    // MARK: - View Controller
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+
+    // MARK: - Methods
+    
+}
+
+// MARK: - UITableViewDataSource
+
+extension &lt;#VC#&gt;: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        UITableViewCell()
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension &lt;#VC#&gt;: UITableViewDelegate {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>46F5CC16-5995-4C6F-893C-0DF810107A4A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>VC with UITableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
